@@ -1,54 +1,61 @@
 .nav {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    padding: 6px 8rem;
-    background-color: white;
-    box-shadow: -2px 0px 8px 2px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo {
-    width: 50px;
-    height: auto;
-  }
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 6px 8rem;
+  background-color: white;
+  box-shadow: -2px 0px 8px 2px rgba(0, 0, 0, 0.1);
+}
 
-  .title {
-    margin-top: 10px;
-    width: auto;
-    height: 30px;
-  }
-  
-  .menu {
-    display: flex;
-    align-items: center;
-  }
-  
-  .menu li {
-    list-style: none;
-    margin-bottom: 3em;
-    margin-right: 30px;
-  }
-  
-  .menu li:last-child {
-    margin-right: 0;
-  }
-  
-  .menu li a {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    color: #000;
-  }
+.logo {
+  width: 50px;
+  height: auto;
+}
 
-  .menu p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    color: #000;
-  }
+.title {
+  width: auto;
+  height: 30px;
+}
+
+.buttons ul a button  {
+  border-radius: 30px;
+  background-color: rgb(238, 27, 36);
+  height: 10px;
+  width: 50px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  list-style: none;
+  margin-bottom: 3em;
+  margin-right: 30px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu li a {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+}
+
+.menu p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+}
+

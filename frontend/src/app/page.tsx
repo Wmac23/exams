@@ -10,10 +10,10 @@ export default function Home() {
       <br />
      <img src="mypokemon.png" alt="" />
       </div>
-      <img src="logo.png" alt="" />
+      <img className={styles.logo} src="logo.png" alt="" />
       <div>
-        <button className={styles.buttons}>See Pokémon</button>
-        <button className={styles.buttons}>My Pokémon</button>
+       <a href="/pokemonlist"><button className={styles.buttons}>See Pokémon</button></a> 
+       <a href="/mypokemon"><button className={styles.buttons}>My Pokémon</button></a> 
       </div>
       <Footer/>
     </main>

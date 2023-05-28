@@ -7,10 +7,9 @@ export default function Nav() {
       <a href="/">
       <ul>
      <img className={navStyles.logo} src="logo.png" alt="" />
-        <img className={navStyles.title} src="mypokemon.png" alt="" />
+        <img className={navStyles.logo} src="mypokemon.png" alt="" />
       </ul>
       </a>
-
       <ul>
       <a href="/"><button>Home</button></a>
        <a href="/mypokemon"><button>My Pókemon</button></a>
