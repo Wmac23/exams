@@ -1,22 +1,50 @@
-import { NextPage } from "next";
-import Nav from "../shared/nav";
-import Footer from "../shared/footer";
-import styles from './page.module.css'
-import Layout from "../../../components/layout";
+'use client';
 
-export default function PokemonList ( {pokemon} ) {
-  console.log(pokemon);
-    return (
-        <main className={styles.main}>
-        <Nav />
-        <div>
-<img src="choose.png" alt="" />
-        
-        <Layout title="NextJs Pokedex">
-<h1 className="text-4xl mb-8 text-center">NextJs pokedex</h1>
-        </Layout>
-        </div>
-        <Footer/>
-      </main>)
-    
+import { useEffect, useState } from 'react';
+import Nav from '../shared/nav';
+import Footer from '../shared/footer';
+type Pokemon = {
+  name: string;
+  imageUrl: string;
 };
+
+const PokemonPage = () => {
+  const [pokemonData, setPokemonData] = useState<Pokemon[]>([]);
+
+  useEffect(() => {
+    const fetchPokemonData = async () => {
+      try {
+        const response = await fetch('https://pokeapi.co/api/v2/pokemon');
+        const data = await response.json();
+
+        const pokemonList = data.results.map((pokemon: { name: string; }) => ({
+          name: pokemon.name,
+          url: `https://pokeapi.co/api/v2/pokemon/1/`,
+        }));
+
+        setPokemonData(pokemonList);
+      } catch (error) {
+        console.error('Error fetching Pokemon data:', error);
+      }
+    };
+
+    fetchPokemonData();
+  }, []);
+
+  return (
+    <main><div>
+        <Nav/>
+      <h1>Pokemon List</h1>
+      {pokemonData.map((pokemon: Pokemon) => (
+        <div key={pokemon.name}>
+          <h2>{pokemon.name}</h2>
+          <img src={pokemon.url} alt='' />
+          <Footer/>
+        </div>
+      ))}
+    </div>
+    </main>
+  );
+};
+
+export default PokemonPage;
