@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/pokemonlist/pokemon.tsx", "src/app/pokemonlist/page.tsx", "components/layout.tsx"],
   "exclude": ["node_modules"]
 }

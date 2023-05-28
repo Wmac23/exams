@@ -8,7 +8,7 @@ const Mypokemon: NextPage = () => {
         <main className={styles.main}>
         <Nav />
         <div>
-<img src="choose.png" alt="" />
+<img src="mylist.png" alt="" />
         </div>
         <Footer/>
       </main>)
