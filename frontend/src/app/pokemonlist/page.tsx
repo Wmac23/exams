@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Nav from '../shared/nav';
 import Footer from '../shared/footer';
+import styles from './page.module.css'
 type Pokemon = {
   name: string;
   imageUrl: string;
@@ -19,7 +20,7 @@ const PokemonPage = () => {
 
         const pokemonList = data.results.map((pokemon: { name: string; }) => ({
           name: pokemon.name,
-          url: `https://pokeapi.co/api/v2/pokemon/1/`,
+          url: `https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png`,
         }));
 
         setPokemonData(pokemonList);
@@ -32,13 +33,14 @@ const PokemonPage = () => {
   }, []);
 
   return (
-    <main><div>
+    <main className={styles.main}><div>
         <Nav/>
-      <h1>Pokemon List</h1>
+      <img className={styles.pokePic} src="choose.png" alt="" />
       {pokemonData.map((pokemon: Pokemon) => (
-        <div key={pokemon.name}>
+        <div className={styles.pokedex} key={pokemon.name}>
           <h2>{pokemon.name}</h2>
           <img src={pokemon.url} alt='' />
+          <button>Add to favourite</button>
           <Footer/>
         </div>
       ))}

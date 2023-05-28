@@ -4,12 +4,11 @@ import navStyles from "./Nav.module.css";
 export default function Nav() {
   return (
     <nav className={navStyles.nav}>
-      <a href="/">
-        <ul className={navStyles.logo}>
-          <li><img src="logo.png" alt="" /></li>
-          <li><img src="mypokemon.png" alt="" /></li> 
-        </ul>
-      </a>
+      <a href="/"><img className={navStyles.logo} src="logo.png" alt="" /></a>
+        <a href="/"><img className={navStyles.title} src="mypokemon.png" alt="" /></a>
+        
+        
+      
       <ul>
       <a href="/"><button>Home</button></a>
        <a href="/mypokemon"><button>My Pókemon</button></a>

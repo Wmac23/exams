@@ -7,6 +7,10 @@
   min-height: 100vh;
 }
 
+.pokepic{
+  height: 75px;
+  width: auto;
+}
 
 .card {
   padding: 1rem 1.2rem;
@@ -198,4 +202,16 @@ background-color: rgb(32, 3, 4);
   to {
     transform: rotate(0deg);
   }
+}
+
+.pokedex{
+  border: solid 4px black;
+  border-radius: 45px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  float: left;
+  width: fit-content;
+  height: fit-content;
+  background-color: aliceblue;
 }
