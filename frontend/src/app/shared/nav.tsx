@@ -5,10 +5,10 @@ export default function Nav() {
   return (
     <nav className={navStyles.nav}>
       <a href="/">
-      <ul>
-     <img className={navStyles.logo} src="logo.png" alt="" />
-        <img className={navStyles.logo} src="mypokemon.png" alt="" />
-      </ul>
+        <ul className={navStyles.logo}>
+          <li><img src="logo.png" alt="" /></li>
+          <li><img src="mypokemon.png" alt="" /></li> 
+        </ul>
       </a>
       <ul>
       <a href="/"><button>Home</button></a>
