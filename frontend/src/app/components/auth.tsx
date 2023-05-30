@@ -36,10 +36,9 @@ export const Auth = () => {
             </div>
             <br />
             <div className="signin">
-            <button onClick={signIn}>Sign in</button>
-            <button className="signinGoogle" onClick={signInWithGoogle}>Sign in with google</button>
+            <a href="/home"><button onClick={signIn}>Sign in</button></a>
+         <button className="signinGoogle" onClick={signInWithGoogle}>Sign in with google</button>
             </div>
-        
     </main>
     );
 };
