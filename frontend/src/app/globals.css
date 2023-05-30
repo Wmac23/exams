@@ -41,3 +41,25 @@ button:active {
   background-color: rgb(142, 24, 30);
 }
 
+input{
+  padding: 4px;
+  border-radius: 25px;
+  border: solid 1.5px black;
+  margin: 25px;
+}
+
+.signin{
+  align-items: center;
+  float: left;
+  display: flex;
+}
+.signinGoogle{
+background-color: rgb(50, 98, 201); 
+align-items: center;
+  float: left;
+  display: flex;
+}
+.logon{
+  float: left;
+  display: flex;
+}

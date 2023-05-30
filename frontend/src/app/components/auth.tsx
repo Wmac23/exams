@@ -2,7 +2,7 @@
 
 import Footer from "../shared/footer";
 import { auth, googleProvider } from "../firebase";
-import { createUserWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, signInWithPopup} from "firebase/auth";
 import { useState } from "react";
 
 export const Auth = () => {
@@ -27,26 +27,19 @@ export const Auth = () => {
     }
     };
 
-    const logOut = async () => {
-        
-        try {
-        await signOut(auth);
-    } catch(err) {
-        console.log(err)
-    }
-    };
-
     return(
-        <main>
-        <div>
+        <main> 
+            <img src="mypokemon.png" alt="" />
+        <div className="logon">
             <input placeholder="Email" type="text" onChange={(e) => setEmail(e.target.value)} />
             <input placeholder="Password" type="password" onChange={(e) => setPassword(e.target.value)} />
+            </div>
             <br />
+            <div className="signin">
             <button onClick={signIn}>Sign in</button>
-            <br />
-            <button onClick={signInWithGoogle}>Sign in with google</button>
-            <button onClick={logOut}>Log out</button>
-        </div>
+            <button className="signinGoogle" onClick={signInWithGoogle}>Sign in with google</button>
+            </div>
+        
     </main>
     );
 };
