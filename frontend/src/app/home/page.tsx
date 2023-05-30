@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Nav />
-      <script type='module' src='/firebase'></script>
       <div>
       <img src="welcome.png" alt="" />
       <br />

@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/router";
 import { auth } from "../firebase";
 import { signOut } from "firebase/auth";
 import { useState } from "react";
@@ -8,8 +9,7 @@ export const LogOut = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword ] = useState("");
 
-    const logOut = async () => {
-        
+    const logOut = async () => {    
         try {
         await signOut(auth);
     } catch(err) {
@@ -20,8 +20,7 @@ export const LogOut = () => {
     return(
         <main>
         <div>
-
-            <button onClick={logOut}>Log out</button>
+            <a href="/"><button onClick={logOut}>Log out</button></a>
         </div>
     </main>
     );
