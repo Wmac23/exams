@@ -66,7 +66,7 @@ const PokemonPage = () => {
     <div>
      <img src="choose.png" alt="" />
       {pokemonData.map((pokemon: Pokemon) => (
-           <Link href={'/pokemon?id=${index + 1}'}><div key={pokemon.name} className={styles.pokedex}>
+            <Link href={`${pokemon.name}`}><div key={pokemon.name} className={styles.pokedex}>
           <h2>{pokemon.name}</h2>
         <img src={pokemon.imageUrl} alt={pokemon.name} />
         </div></Link>
