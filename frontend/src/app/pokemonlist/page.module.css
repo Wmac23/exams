@@ -7,6 +7,12 @@
   min-height: 100vh;
 }
 
+.main h2{
+  font-size: x-large;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
 .pokepic{
   height: 75px;
   width: auto;
@@ -207,11 +213,19 @@ background-color: rgb(32, 3, 4);
 .pokedex{
   border: solid 4px black;
   border-radius: 45px;
-  padding: 20px;
+  padding: 30px;
   margin: 10px;
   display: flex;
   float: left;
   width: fit-content;
   height: fit-content;
   background-color: aliceblue;
+width: 450px;
+}
+
+.pokedex img{
+display: flex;
+  height: 200px;
+  width: auto;
+  float: right;
 }

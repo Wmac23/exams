@@ -10,7 +10,7 @@ export default function Nav() {
         
       
       <ul>
-      <a href="/"><button>Home</button></a>
+      <a href="/home"><button>Home</button></a>
        <a href="/mypokemon"><button>My Pókemon</button></a>
         <a href="/pokemonlist"><button>Pókemon list</button></a>
         <button>Log out</button>
