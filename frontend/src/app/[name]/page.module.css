@@ -199,4 +199,8 @@
       transform: rotate(0deg);
     }
   }
-  
+
+.main h1{
+  font-size: 100px;
+  font-weight: 800;
+}
