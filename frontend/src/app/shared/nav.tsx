@@ -1,5 +1,6 @@
 import React from "react";
 import navStyles from "./Nav.module.css";
+import { LogOut } from "../components/logOut";
 
 export default function Nav() {
   return (
@@ -13,8 +14,8 @@ export default function Nav() {
       <a href="/home"><button>Home</button></a>
        <a href="/mypokemon"><button>My Pókemon</button></a>
         <a href="/pokemonlist"><button>Pókemon list</button></a>
-        <a href="/"><button>Log out</button></a>
         </ul>
+        <LogOut/>
     </nav>
   );
 }

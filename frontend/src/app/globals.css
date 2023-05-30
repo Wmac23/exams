@@ -34,6 +34,7 @@ button{
   width: 125px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
+  cursor: pointer;
 }
 
 button:active {

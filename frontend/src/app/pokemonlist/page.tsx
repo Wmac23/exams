@@ -1,4 +1,5 @@
 'use client';
+
 import Link from "next/link";
 import Nav from "../shared/nav";
 import Footer from "../shared/footer";
