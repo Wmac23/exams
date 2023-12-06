@@ -7,12 +7,13 @@ import { Firestore, getFirestore } from 'firebase/firestore'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAKO9iXG4kKa6igr2IcdHBLt_jn-IRLV_k",
-  authDomain: "exam2023-8191c.firebaseapp.com",
-  projectId: "exam2023-8191c",
-  storageBucket: "exam2023-8191c.appspot.com",
-  messagingSenderId: "669644845356",
-  appId: "1:669644845356:web:c687199f8e61519e3dfc89"
+  apiKey: "AIzaSyBMAyJglx9Ontf4vwfpYztJI1f5SXPz0Sc",
+  authDomain: "ba-exam.firebaseapp.com",
+  projectId: "ba-exam",
+  storageBucket: "ba-exam.appspot.com",
+  messagingSenderId: "595062448983",
+  appId: "1:595062448983:web:d1f2c72741f55633d39412",
+  measurementId: "G-V2RD5YRTK6"
 };
 
 // Initialize Firebase
@@ -21,3 +22,4 @@ export const auth = getAuth(app);
 export const googleProvider = new GoogleAuthProvider();
 
 export const db = getFirestore(app)
+ 
