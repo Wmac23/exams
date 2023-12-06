@@ -1,0 +1,24 @@
+.nav {
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    background-color: #535d34;
+    text-align: center;
+    position: fixed;
+    top: 0;
+  }
+
+  .points{
+    display: inline-block;
+    color: azure;
+    font-size: x-large;
+    font-weight: 400;
+    margin-left: 15px;
+    padding: 1.1%;
+  }
+  
+
+  
+
+   
+  

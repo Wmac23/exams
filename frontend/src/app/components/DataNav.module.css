@@ -1,0 +1,32 @@
+.nav {
+    margin: auto;
+    padding: auto;
+    text-align: center;
+  }
+
+  .points{
+    text-align: left;
+    color: white;
+    font-size: x-large;
+    font-weight: 400;
+    padding: 0.5em;
+    background-color: #535d34;
+    border: solid white 0.5px;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  .points:hover {
+    background-color: #535d347a; /* Green */
+    color: #ffffff;
+  }
+
+  .points:active{
+    background-color: #ffffff; /* Green */
+    color: #000000;
+    border: solid 3px #535d34;
+  }
+  
+  
+
+  

@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  justify-content: center;
+  position:fixed;
+  top: 33%;
+  width:100%;
+  min-width:1000px;
+  height:auto;
+  z-index: -1 ;
+}
+
+.text{
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+}
+
+.sidebar{
+  height: 100%;
+  bottom: 0;
+  width: fit-content;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
