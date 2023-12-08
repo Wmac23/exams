@@ -31,9 +31,10 @@ function Home() {
     <div>
     
   {myPokemon.map((pokemon) => (
-    <div key={pokemon.name} className={styles.text}>
+    <div className={styles.text}>
     <table className="charts-css line">
     <thead>
+      <caption>{pokemon.name}</caption>
     </thead>
     <tbody>
       <td>{pokemon.name}</td>
@@ -41,7 +42,7 @@ function Home() {
       <td>{pokemon.Abilities}</td>
     </tbody>
   </table>
-  </div>
+  </div> 
 
     ))}
   </div>
