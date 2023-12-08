@@ -10,6 +10,7 @@ export default function Luftfart() {
       <div className={styles.sidebar}><RejsekortNav/></div>
         <div>
           <h1 className={styles.text}>Fordeling af rejsekortrejser</h1>
+  
       </div>
       <Footer/>
     </main>

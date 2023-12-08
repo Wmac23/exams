@@ -9,11 +9,6 @@ import RejsekortNav from "../components/RejsekortNav";
 
 function Home() {
   const [myPokemon, setMyPokemon] = useState([]);
-
-  const [myPokemonName, setMyPokemonName] = useState([]);
-  const [myPokemonType, setMyPokemonType] = useState([]);
-  const [myPokemonAbility, setMyPokemonAbility] = useState([]);
-
   const pokemonCollectionRef = collection(db, "pokemon");
 
   useEffect (() => {
@@ -29,36 +24,25 @@ function Home() {
   getMyPokemon();
   }, [])
 
-  const onSubmitPokemon = async () => {
-    try{
-    await addDoc(pokemonCollectionRef, {name: myPokemonName, type: myPokemonType, Abilities: myPokemonAbility})
-    } catch(err){
-      console.log (err);
-    }
-  }
- 
   return (
   <main className={styles.main}>
     <Navbar/>
     <RejsekortNav/>
     <div>
-    <div>
-      <input placeholder="Pókemon name" type="text" onChange={(e) => setMyPokemonName(e.target.value)} />
-      <input placeholder="Pókemon type" type="text"  onChange={(e) => setMyPokemonType(e.target.value)} />
-      <input placeholder="Pókemon ability" type="text"  onChange={(e) => setMyPokemonAbility(e.target.value)} />
-      <button onClick={onSubmitPokemon}>Submit pókemon</button>
-    </div>
     
-  
   {myPokemon.map((pokemon) => (
     <div key={pokemon.name} className={styles.text}>
-      <h2>Name:</h2>
-  <p>{pokemon.name}</p>
-  <h2>Type:</h2>
-  <p>{pokemon.type}</p>
-  <h2>Ability:</h2>
-  <p>{pokemon.Abilities}</p>
+    <table className="charts-css line">
+    <thead>
+    </thead>
+    <tbody>
+      <td>{pokemon.name}</td>
+      <td>{pokemon.type}</td>
+      <td>{pokemon.Abilities}</td>
+    </tbody>
+  </table>
   </div>
+
     ))}
   </div>
   <Footer/>
