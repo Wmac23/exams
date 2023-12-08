@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { db } from "../firebase";
 import styles from './page.module.css'
-import { getDocs, collection, addDoc } from "firebase/firestore";
+import { getDocs, collection} from "firebase/firestore";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import RejsekortNav from "../components/RejsekortNav";
