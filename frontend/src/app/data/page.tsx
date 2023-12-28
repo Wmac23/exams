@@ -9,7 +9,7 @@ export default function omData() {
       <Navbar />
       <div className={styles.sidebar}> <DataNav/> </div>
       <div className={styles.text}>
-        <h1>Om data</h1>
+        <h2>Om data</h2>
         <br />
         <h2>Datakvalitet</h2>
         <p>Trafikstyrelsen arbejder løbende på at forbedre kvaliteten af vores data, der er baseret på rapporteringer fra de respektive operatører, trafikselskaber, infrastrukturforvaltere og godsoperatører.

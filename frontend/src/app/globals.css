@@ -16,26 +16,18 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 button{
   display: inline-block;
   background-color: #535d34;
   color: #ffffff;
   margin-left: 2em;
+  margin-top: 2em;
+  padding: 20px;
   text-align: center;
   line-height: 50px;
   border: none;
   border-radius: 20px;
-  }
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;  }
 
   button:hover {
     background-color: #535d347a; /* Green */
@@ -48,32 +40,36 @@ button{
     border: solid 3px #535d34;
   }
 
-
-
 input{
   padding: 4px;
   border-radius: 25px;
   border: solid 1.5px black;
   margin: 25px;
 }
-
-.signin{
-  align-items: center;
-  float: left;
-  display: flex;
-}
-.signinGoogle{
-background-color: rgb(50, 98, 201); 
-align-items: center;
-  float: left;
-  display: flex;
-}
-.logon{
-  float: left;
-  display: flex;
+h1, h2, h3, p{
+  font-size: 200%;
 }
 
+h1{
+  font-size: 70px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
 h2{
-  font-size: larger;
-  font-weight: 700;
+  font-size: 50px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+h3{
+  font-size: 30px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+p{
+  font-size: 25px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+img
+{
+ width: 33%;
+ align-items: center;
+ display: block;
+ margin: auto; 
 }
