@@ -1,14 +1,19 @@
 .main {
   display: flex;
   justify-content: center;
-  position:fixed;
   top: 33%;
   width:100%;
   min-width:1000px;
   height:auto;
   z-index: -1 ;
+  padding: auto;
 }
 
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+}
 .text{
   justify-content: center;
   text-align: center;
