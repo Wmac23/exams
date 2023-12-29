@@ -57,5 +57,6 @@ img
  width: 33%;
  align-items: center;
  display: block;
- margin: auto; 
+ margin: auto;
+ padding: auto; 
 }

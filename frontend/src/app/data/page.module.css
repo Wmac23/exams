@@ -8,6 +8,7 @@
   z-index: -1 ;
   padding: auto;
 }
+
 @media (max-width: 800px) {
   .main {
     flex-direction: column;

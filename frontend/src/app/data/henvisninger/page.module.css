@@ -9,13 +9,18 @@
   padding: auto;
 }
 
-@media (max-width: 800px) {
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
   .main {
-    flex-direction: column;
+    grid-template-columns: repeat(2, 50%);
   }
 }
-.text{
-  justify-content: center;
-  text-align: left;
-  padding: 3%;
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }

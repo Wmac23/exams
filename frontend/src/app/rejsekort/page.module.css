@@ -19,3 +19,12 @@
   justify-content: center;
   padding: 3%;
 }
+
+.sidebar{
+  height: 100%;
+  bottom: 0;
+  width: fit-content;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
