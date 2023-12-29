@@ -1,7 +1,8 @@
+'use client'
 import styles from './page.module.css'
 import Navbar from '@/app/components/Navbar'
-import Footer from '@/app/components/Footer'
 import RejsekortNav from '@/app/components/RejsekortNav'
+import { Tooltip } from '@/app/components/tooltip'
 
 export default function Luftfart() {
   return (
@@ -11,7 +12,7 @@ export default function Luftfart() {
         <div>
           <h1 className={styles.text}>Rejsekortrejser</h1>
       </div>
-      <Footer/>
+      <Tooltip/>
     </main>
   )
 }

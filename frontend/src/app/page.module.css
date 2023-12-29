@@ -3,8 +3,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 20rem;
-    min-height: 100vh;
+    margin-top: 12%;
+    padding: 5%;
   }
   
   /* Tablet and Smaller Desktop */

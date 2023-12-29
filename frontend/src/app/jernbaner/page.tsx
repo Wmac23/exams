@@ -1,6 +1,7 @@
+'use client'
 import styles from './page.module.css'
 import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import { Tooltip } from '../components/tooltip'
 
 export default function Jernbaner() {
   return (
@@ -16,7 +17,7 @@ export default function Jernbaner() {
       <button><img src="tablet.png" alt="Icon for a table/graph"/><br/><h4>OD for statsbanen, tabel</h4></button>
       </ul>
       </div>
-      <Footer/>
+      <Tooltip/>
     </main>
   )
 }

@@ -1,6 +1,9 @@
+'use client'
+
 import styles from './page.module.css'
 import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import { Tooltip } from './components/tooltip'
+import { Help } from './components/help'
 
 export default function Home() {
   return (
@@ -14,7 +17,9 @@ export default function Home() {
         <a href="busser"><button className={styles.buttons}><img src="bus.png" alt="Icon of a bus"/><br/>Busser</button></a>
         <a href="rejsekort"><button className={styles.buttons}><img src="card.png" alt="Icon of a card"/><br/>Rejsekort</button></a>
       </div>
-      <Footer/>
-    </main>
+      <Tooltip/>
+      <Help/>
+      </main>
   )
 }
+

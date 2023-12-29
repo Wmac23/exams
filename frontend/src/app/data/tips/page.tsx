@@ -1,7 +1,8 @@
+'use client'
 import styles from './page.module.css'
 import Navbar from '../../components/Navbar'
-import Footer from '../../components/Footer'
 import DataNav from '../../components/DataNav'
+import { Tooltip } from '@/app/components/tooltip'
 
 export default function omData() {
   return (
@@ -15,7 +16,7 @@ export default function omData() {
 <h2>Fjern synkroniseringen</h2>
 <p>Klik på "Slet valg" i topmenuen. Hvis dette ikke virker, så opdatér siden ved at trykke på F5 eller på din browsers opdateringsknap</p>
       </div>
-      <Footer/>
+      <Tooltip/>
     </main>
   )
 }

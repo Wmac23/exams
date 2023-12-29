@@ -4,13 +4,14 @@
 
 button{
   display: inline-block;
+  align-items: center;
   background-color: #535d34;
   color: #ffffff;
   margin-left: 2em;
   margin-top: 2em;
   padding-top: 1em;
   text-align: center;
-  line-height: 50px;
+  line-height: 300%;
   border: none;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;  }
@@ -26,12 +27,6 @@ button{
     border: solid 3px #535d34;
   }
 
-input{
-  padding: 4px;
-  border-radius: 25px;
-  border: solid 1.5px black;
-  margin: 25px;
-}
 h1, h2, h3, p{
   font-size: 200%;
 }
@@ -54,9 +49,6 @@ p{
 }
 img
 {
- width: 33%;
- align-items: center;
- display: block;
+ width: 30%;
  margin: auto;
- padding: auto; 
 }

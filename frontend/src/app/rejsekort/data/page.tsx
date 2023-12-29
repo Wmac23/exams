@@ -1,6 +1,7 @@
+"use client"
 import styles from './page.module.css'
 import Navbar from '@/app/components/Navbar'
-import Footer from '@/app/components/Footer'
+import { Tooltip } from '@/app/components/tooltip'
 import RejsekortNav from '@/app/components/RejsekortNav'
 
 export default function Luftfart() {
@@ -11,7 +12,7 @@ export default function Luftfart() {
         <div>
           <h1 className={styles.text}>Om data</h1>
       </div>
-      <Footer/>
+      <Tooltip/>
     </main>
   )
 }

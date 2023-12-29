@@ -4,8 +4,8 @@ import { db } from "../firebase";
 import styles from './page.module.css'
 import { getDocs, collection} from "firebase/firestore";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import RejsekortNav from "../components/RejsekortNav";
+import { Tooltip } from "../components/tooltip";
 
 function Home() {
   const [myPokemon, setMyPokemon] = useState([]);
@@ -46,7 +46,7 @@ function Home() {
 
     ))}
   </div>
-  <Footer/>
+  <Tooltip/>
 </main>
 )
 
