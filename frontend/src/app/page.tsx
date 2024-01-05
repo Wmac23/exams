@@ -3,7 +3,6 @@
 import styles from './page.module.css'
 import Navbar from './components/Navbar'
 import { Tooltip } from './components/tooltip'
-import { Help } from './components/help'
 
 export default function Home() {
   return (
@@ -16,10 +15,11 @@ export default function Home() {
         <a href="jernbaner"><button className={styles.buttons}><img src="train.png" alt="Icon of a train"/><br/>Jernbaner</button></a>
         <a href="busser"><button className={styles.buttons}><img src="bus.png" alt="Icon of a bus"/><br/>Busser</button></a>
         <a href="rejsekort"><button className={styles.buttons}><img src="card.png" alt="Icon of a card"/><br/>Rejsekort</button></a>
-      </div>
-      <Tooltip/>
-      <Help/>
+        <Tooltip className={styles.tooltip}/>
+        </div>
+        
       </main>
+      
   )
 }
 

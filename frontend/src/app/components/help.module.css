@@ -1,18 +1,23 @@
-.container img{
+.container{
     display: inline-block;
     width: 33%;
     margin-top: 10%;
-    margin-bottom: auto;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    margin-bottom: 10%;
 }
 
-.tooltip{
+.help{
     position: absolute;
     border: solid black 1px;
     background-color: white;
     color: black;
     border-radius: 10px;
     padding: 0.3em;
+    margin-right: 10% ;
+}
+
+.button{
+    width: 90px;
+    font-size: larger;
+    font-weight: 700;
+    padding: 0;
 }

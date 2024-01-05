@@ -10,12 +10,12 @@ onMouseEnter={()=> setIsVisible(true)}
 onMouseLeave={()=> setIsVisible(false)}
 >
 {children} 
-{isVisible && <div className={Styles.tooltip}><h3>Synkronisér highlights</h3>
+{isVisible && <div className={Styles.help}><h3>Synkronisér highlights</h3>
 <p>Klik på et datapunkt i et plot, og det vil blive fremhævet. Denne markering spejles på relevante plots, så du kan sammenligne og forstå data på tværs af visualiseringer</p>
 <br />
 <h3>Fjern synkroniseringen</h3>
 <p>Klik på "Slet valg" i topmenuen. Hvis dette ikke virker, så opdatér siden ved at trykke på F5 eller på din browsers opdateringsknap</p></div>}
-<button>Hjælp</button>
+<button className={Styles.button}>Hjælp</button>
 </div>
 );
 }

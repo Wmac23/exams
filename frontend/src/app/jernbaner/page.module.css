@@ -1,16 +1,12 @@
 .main {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  width: 75%;
-  margin: 0 auto;
+  margin-top: 10%;
 }
 
-@media (max-width: 800px) {
-  .main {
-    flex-direction: column;
-  }
-}
+
 .text{
   display: flex;
   justify-content: center;

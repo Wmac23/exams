@@ -1,13 +1,11 @@
 .main {
   display: flex;
-  justify-content: center;
-  top: 33%;
-  width:100%;
-  min-width:1000px;
-  height:auto;
-  padding: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12%;
+  padding: 5%;
 }
-
 @media (max-width: 800px) {
   .main {
     flex-direction: column;
@@ -15,15 +13,6 @@
 }
 .text{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   padding: 3%;
-}
-
-.sidebar{
-  height: 100%;
-  bottom: 0;
-  width: fit-content;
-  position: absolute;
-  left: 0;
-  top: 0;
 }

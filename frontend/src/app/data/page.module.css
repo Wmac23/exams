@@ -1,9 +1,9 @@
 .main {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  width: 75%;
-  margin: 0 auto;
+  margin-top: 10%;
 }
 
 @media (max-width: 800px) {
@@ -11,8 +11,8 @@
     flex-direction: column;
   }
 }
+
 .text{
-  align-items: center;
-  text-align: left;
-  padding: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
 }

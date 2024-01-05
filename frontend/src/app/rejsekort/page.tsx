@@ -29,7 +29,7 @@ function Home() {
     <Navbar/>
     <RejsekortNav/>
     <div>
-    <h2>Rejsekort</h2>
+    <h1>Rejsekort</h1>
   {myPokemon.map((pokemon) => (
     <div className={styles.text}>
     <table className="charts-css line">

@@ -1,18 +1,17 @@
 .container img{
     display: inline-block;
-    width: 33%;
+    width: 80px ;
     margin-top: 10%;
-    margin-bottom: auto;
     bottom: 0;
     left: 0;
-    right: 0;
+    
 }
 
 .tooltip{
-    position: absolute;
+    position:fixed;
     border: solid black 1px;
     background-color: white;
     color: black;
     border-radius: 10px;
-    padding: 0.3em;
+    margin-top: 11em;
 }

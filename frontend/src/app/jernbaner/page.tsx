@@ -16,8 +16,8 @@ export default function Jernbaner() {
       <button><img src="map.png" alt="Icon for a map"/><br/><h4>OD for statsbanen, kort</h4></button>
       <button><img src="tablet.png" alt="Icon for a table/graph"/><br/><h4>OD for statsbanen, tabel</h4></button>
       </ul>
-      </div>
       <Tooltip/>
+      </div>
     </main>
   )
 }
