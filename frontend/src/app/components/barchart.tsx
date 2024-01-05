@@ -8,15 +8,15 @@ import RejsekortNav from "../components/RejsekortNav";
 import { Tooltip } from "../components/tooltip";
 
 function Barchart() {
-  const [myPokemon, setMyPokemon] = useState([]);
-  const pokemonCollectionRef = collection(db, "pokemon");
+  const [myRejser, setMyRejser] = useState([]);
+  const rejserCollectionRef = collection(db, "rejsekortrejser - antal");
 
   useEffect(() => {
     const getMyPokemon = async () => {
       try {
-        const data = await getDocs(pokemonCollectionRef);
+        const data = await getDocs(rejserCollectionRef);
         const filteredData = data.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
-        setMyPokemon(filteredData);
+        setMyRejser(filteredData);
       } catch (err) {
         console.log(err);
       }
@@ -26,17 +26,17 @@ function Barchart() {
   }, []);
 
   useEffect(() => {
-    // Render a bar chart using Chart.js
+    
     const ctx = document.getElementById("myChart") as HTMLCanvasElement | null;
     if (ctx) {
       const myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-          labels: myPokemon.map((pokemon) => pokemon.name),
+          labels: myRejser.map((antal) => antal.id),
           datasets: [
             {
               label: "Abilities",
-              data: myPokemon.map((pokemon) => pokemon.Abilities),
+              data: myRejser.map((antal) => antal.passagere),
               backgroundColor: "rgba(75, 192, 192, 0.2)",
               borderColor: "rgba(75, 192, 192, 1)",
               borderWidth: 1,
@@ -45,12 +45,11 @@ function Barchart() {
         },
       });
 
-      // Clean up the chart when the component unmounts
       return () => {
         myChart.destroy();
       };
     }
-  }, [myPokemon]);
+  }, [myRejser]);
 
   return (
     <main className={styles.main}>
