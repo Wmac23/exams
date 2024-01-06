@@ -11,6 +11,7 @@ export default function omData() {
       <Navbar />
       <DataNav/>
       <div className={styles.text}>
+        <h1>Om data</h1>
         <h2>Henvisninger</h2>
         <p>Nedenfor finder du henvisninger til forskellige rapporter fra Trafikstyrelsen om udvikling i den kollektive trafik.</p>
         <br />

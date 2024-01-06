@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 12%;
     padding: 5%;
   }
   /* Tablet and Smaller Desktop */
@@ -19,5 +18,12 @@
     }
     to {
       transform: rotate(0deg);
+    }
+  }
+
+  @media (max-width: 800px) {
+    .main {
+      flex-direction: column;
+      margin-top: 9%;
     }
   }
