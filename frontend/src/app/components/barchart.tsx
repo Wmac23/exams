@@ -2,21 +2,21 @@ import React, { useEffect, useState } from "react";
 import { db } from "../firebase";
 import styles from "./barchart.module.css";
 import { getDocs, collection } from "firebase/firestore";
-import { Chart } from "chart.js";
+import Chart from 'chart.js/auto';
 import Navbar from "../components/Navbar";
 import RejsekortNav from "../components/RejsekortNav";
 import { Tooltip } from "../components/tooltip";
 
 function Barchart() {
-  const [myRejser, setMyRejser] = useState([]);
-  const rejserCollectionRef = collection(db, "rejsekortrejser - antal");
+  const [myPokemon, setMyPokemon] = useState([]);
+  const pokemonCollectionRef = collection(db, "pokemon");
 
   useEffect(() => {
     const getMyPokemon = async () => {
       try {
-        const data = await getDocs(rejserCollectionRef);
+        const data = await getDocs(pokemonCollectionRef);
         const filteredData = data.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
-        setMyRejser(filteredData);
+        setMyPokemon(filteredData);
       } catch (err) {
         console.log(err);
       }
@@ -32,11 +32,11 @@ function Barchart() {
       const myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-          labels: myRejser.map((antal) => antal.id),
+          labels: myPokemon.map((pokemon) => pokemon.id),
           datasets: [
             {
               label: "Abilities",
-              data: myRejser.map((antal) => antal.passagere),
+              data: myPokemon.map((pokemon) => pokemon.passagere),
               backgroundColor: "rgba(75, 192, 192, 0.2)",
               borderColor: "rgba(75, 192, 192, 1)",
               borderWidth: 1,
@@ -49,7 +49,7 @@ function Barchart() {
         myChart.destroy();
       };
     }
-  }, [myRejser]);
+  }, [myPokemon]);
 
   return (
     <main className={styles.main}>
