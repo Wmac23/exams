@@ -70,7 +70,7 @@ function MonthChart2() {
 
   return (
     <main>
-        <h3>Rejser på rejsekort pr. måned for årene 2020-2023</h3>
+        <h3>Rejsekortindtægter (kr.) pr. måned for årene 2020-2023</h3>
       <canvas id="myChart10"></canvas>
     </main>
   );

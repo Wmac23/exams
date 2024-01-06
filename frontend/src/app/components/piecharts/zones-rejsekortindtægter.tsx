@@ -49,7 +49,7 @@ function ZoneChart2() {
 
   return (
     <main>
-      <h3>Antal rejser på rejsekort i 2023 fordelt på korttype</h3>
+      <h3>Rejsekortindtægter i 2023 fordelt på områder</h3>
       <canvas id="myChart6"></canvas>
     </main>
   );

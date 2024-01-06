@@ -49,7 +49,7 @@ function MoneyChart() {
 
   return (
     <main>
-      <h3>Antal rejser på rejsekort i 2023 fordelt på områder</h3>
+      <h3>Rejsekortindtægter (kr.) pr. år</h3>
       <canvas id="myChart8"></canvas>
     </main>
   );

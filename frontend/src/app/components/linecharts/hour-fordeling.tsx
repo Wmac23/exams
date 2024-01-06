@@ -70,7 +70,7 @@ function HourChart() {
 
   return (
     <main>
-        <h3>Rejser på rejsekort pr. måned for årene 2020-2023</h3>
+        <h3>Gennemsnitlig antal rejser på rejsekort pr. time fordelt på dagstyper i 2023</h3>
       <canvas id="myChart7"></canvas>
     </main>
   );

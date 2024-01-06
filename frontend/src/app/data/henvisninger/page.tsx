@@ -1,14 +1,11 @@
 'use client'
 import styles from './page.module.css'
-import Navbar from '../../components/Navbar'
 import DataNav from '../../components/DataNav'
-import { Tooltip } from '@/app/components/tooltip'
 
-export default function omData() {
+export default function Henvisninger() {
   return (
   
     <main className={styles.main}>
-      <Navbar />
       <DataNav/>
       <div className={styles.text}>
         <h1>Om data</h1>
@@ -34,7 +31,6 @@ export default function omData() {
        <li><h3>Sikkerhedsrapport for jernbaneområdet</h3>
        <p>Trafikstyrelsen udarbejder årligt en sikkerhedsrapport samt faktaark for jernbaneområdet</p>
        <button>Download</button></li>
-      <Tooltip/>
       </div>
       
     </main>

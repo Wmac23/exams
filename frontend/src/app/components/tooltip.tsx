@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Styles from "./tooltip.module.css";
 
-export const Tooltip = ({ text, children }) => {
+export const Tooltip = ({ children }) => {
 const [isVisible, setIsVisible] = useState(false);
 return ( 
 <div 

@@ -15,7 +15,7 @@ onMouseLeave={()=> setIsVisible(false)}
 <br />
 <h3>Fjern synkroniseringen</h3>
 <p>Klik på "Slet valg" i topmenuen. Hvis dette ikke virker, så opdatér siden ved at trykke på F5 eller på din browsers opdateringsknap</p></div>}
-<button className={Styles.button}>Hjælp</button>
+<span className={Styles.button}>Hjælp</span>
 </div>
 );
 }

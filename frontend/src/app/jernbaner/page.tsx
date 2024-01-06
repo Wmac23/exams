@@ -1,12 +1,9 @@
 'use client'
 import styles from './page.module.css'
-import Navbar from '../components/Navbar'
-import { Tooltip } from '../components/tooltip'
 
 export default function Jernbaner() {
   return (
     <main className={styles.main}>
-      <Navbar />
       <div >
       <h1>Jernbaner</h1>
       <ul >
@@ -16,7 +13,6 @@ export default function Jernbaner() {
       <button><img src="map.png" alt="Icon for a map"/><br/><h4>OD for statsbanen, kort</h4></button>
       <button><img src="tablet.png" alt="Icon for a table/graph"/><br/><h4>OD for statsbanen, tabel</h4></button>
       </ul>
-      <Tooltip/>
       </div>
     </main>
   )
